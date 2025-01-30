@@ -1,7 +1,14 @@
 package org.example;
 
+
+import org.example.ch02.Parrot;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        var context = new AnnotationConfigApplicationContext();
+
+        Parrot p = new Parrot();
     }
 }
